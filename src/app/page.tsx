@@ -109,6 +109,7 @@ export default function Home() {
   const onSubmit = () => refetch()
 
   const debouncedSubmit = debounce(onSubmit, 400)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const _debouncedSubmit = useCallback(debouncedSubmit, [])
 
   const applyArrayFilter = ({
